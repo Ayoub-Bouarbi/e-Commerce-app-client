@@ -56,14 +56,14 @@
                    src="https://dummyimage.com/421x261">
                </a>
                <div class="mt-4">
-                 <h3 class="text-gray-500 text-xs tracking-widest title-font uppercase mb-1">{{ product.Brand.name }}
-                 </h3>
-                 <h2 class="text-gray-900 title-font text-lg font-medium">
+                 <!-- <h3 class="text-gray-500 text-xs tracking-widest uppercase mb-1">{{ product.Brand.name }}
+                 </h3> -->
+                 <h2 class="text-gray-600 hover:text-indigo-600 transition duration-500 ease-in-out">
                    <nuxt-link :to="{name: 'shop-slug',params: {slug: product.slug}}">{{ product.name }}</nuxt-link>
                  </h2>
-                 <span v-if="product.sale_price == 0" class="mt-1">${{ product.price }}</span>
-                 <span v-if="product.sale_price > 0" class="mt-1 text-red-400 line-through">${{ product.price }}</span>
-                 <span v-if="product.sale_price > 0" class="mt-1">${{ product.sale_price }}</span>
+                 <span v-if="product.sale_price == 0" class="mt-1 text-sm inline-block text-gray-700">${{ product.price }}</span>
+                 <span v-if="product.sale_price > 0" class="mt-1 text-sm inline-block text-red-400 line-through">${{ product.price }}</span>
+                 <span v-if="product.sale_price > 0" class="mt-1 text-sm inline-block text-gray-700">${{ product.sale_price }}</span>
                </div>
              </div>
            </div>

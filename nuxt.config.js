@@ -45,7 +45,7 @@ export default {
   ],
   proxy: {
   '/api': {
-      target: process.env.APP_GRAPHQL_API_URL,
+      target: process.env.APP_GRAPHQL_ENDPOINT,
       pathRewrite: {
         '^/api' : '/'
       }
