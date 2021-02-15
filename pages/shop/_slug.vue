@@ -1,6 +1,7 @@
 <template>
   <section class="text-gray-600 body-font overflow-hidden">
-    <div class="container px-5 py-24 mx-auto">
+    <div v-if="$apollo.queries.product.loading">Loading....</div>
+    <div v-else class="container px-5 py-24 mx-auto">
       <div class="lg:w-4/5 mx-auto flex flex-wrap">
         <img v-if="image != null" alt="ecommerce"
           class="lg:w-1/2 w-full lg:h-auto h-64 object-cover object-center rounded" :src="image">
@@ -102,7 +103,7 @@
           price: 0,
           description: '',
           Brand: {},
-          Images: {}
+          Images: {},
         },
         quantity: 1
       }
@@ -120,11 +121,18 @@
     },
     computed: {
       image() {
+      //   let images = [];
+
+      //   _.each(this.product.Images,(image) => {
+      //     images.push('http://app-api.test/storage/uploads/products/' + image.image);
+      //   });
         if (this.product.Images.length != 0 && this.product.Images[0] != undefined)
           return 'http://app-api.test/storage/uploads/products/' + this.product.Images[0].image;
 
 
           return null;
+
+      //   return images;
       },
 
     },
