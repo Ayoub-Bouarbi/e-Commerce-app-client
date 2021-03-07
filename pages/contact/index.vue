@@ -40,6 +40,34 @@
 </template>
 
 <script>
-  export default {}
+
+  import CREATE_CONTACT from '@/graphql/contact.gql';
+
+  export default {
+    name: 'Contact',
+    data() {
+      return {
+        input:{
+          name: '',
+          subject: '',
+          message: '',
+          email: ''
+        }
+      }
+    },
+    methods: {
+      contact(){
+          this.$apollo.mutate({
+            mutation: CREATE_CONTACT,
+            variables: {
+              input: this.input
+            }
+          })
+          .then(() => {
+            alert("your Message Has been send");
+          });
+      }
+    },
+  }
 
 </script>

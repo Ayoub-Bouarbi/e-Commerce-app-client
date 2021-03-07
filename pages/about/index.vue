@@ -10,24 +10,7 @@
             alt=""></div>
         <div class="w-full lg:w-1/2 lg:order-1">
           <div class="py-6 lg:pl-32">
-            <h1 class="text-4xl mt-3 font-bold font-heading">About us</h1>
-            <h3 class="mb-2 text-xl font-semibold font-heading">A global video channel screening the best in cultuer</h3>
-            <p class="mb-3 text-blueGray-400 leading-loose">Lorem Ipsum is simply dummy text of the printing and
-              typesetting industry.
-              Lorem Ipsum has been the
-              industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-              and
-              scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-              leap
-              into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
-              the
-              release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-              publishing
-              software like Aldus PageMaker including versions of Lorem Ipsum.</p>
-          </div>
-          <div class="py-6 lg:pl-32">
             <div class="mb-4">
-              <span class="text-xs py-1 px-3 text-blue-600 font-semibold bg-blue-50 rounded-xl">Lorem ipsum</span>
               <h2 class="text-4xl mt-3 font-bold font-heading">Key Features</h2>
             </div>
             <div class="flex items-start py-4">
